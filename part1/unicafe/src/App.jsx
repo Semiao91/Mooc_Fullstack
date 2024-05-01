@@ -66,8 +66,8 @@ const App = () => {
           neutral={neutral}
           bad={bad}
           all={all}
-          average={sum === 0 ? sum : sum / all}
-          positiveAverage={sum === 0 ? sum : (positiveSum / all) * 100}
+          average={all === 0 ? sum : sum / all}
+          positiveAverage={all === 0 ? sum : (positiveSum / all) * 100}
         />
       )}
     </>
